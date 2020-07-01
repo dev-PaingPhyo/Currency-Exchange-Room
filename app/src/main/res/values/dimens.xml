@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_9">9dp</dimen>
+    <dimen name="flag_dimen">53dp</dimen>
+    <dimen name="flag_start_dimen">16dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="dimen_Text17">17sp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="dimen_Text11">11sp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_26">26dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="dimen_Text13">13sp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_Text18">18sp</dimen>
+    <dimen name="dimen_Text30">30sp</dimen>
+    <dimen name="dimen_Text40">40sp</dimen>
+</resources>

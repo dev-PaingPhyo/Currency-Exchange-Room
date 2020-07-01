@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/convert_Flag"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_usd"/>
+
+        <RelativeLayout
+            android:id="@+id/convert_Name_Rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/convert_Flag">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/convert_Currency_Short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/central_text_color"
+                android:gravity="start"
+                android:layout_marginStart="5dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/convert_Other_Rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:text="1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_transfer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/convert_MM_Flag"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_myanmar" />
+
+        <RelativeLayout
+            android:id="@+id/convert_MM_Name_Rate"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/convert_MM_Flag">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="start"
+                android:text="@string/mmk"
+                android:textColor="@color/central_text_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/convert_MM_Rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:text="1"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_One"
+                style="@style/NumberButtonStyle"
+                android:onClick="onClickOne"
+                android:text="1"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/dimen_Text30"/>
+
+            <Button
+                android:id="@+id/btn_Two"
+                style="@style/NumberButtonStyle"
+                android:text="2"
+                android:onClick="onClickTwo"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/dimen_Text30"/>
+            <Button
+                android:id="@+id/btn_Three"
+                style="@style/NumberButtonStyle"
+                android:text="3"
+                android:onClick="onClickThree"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/dimen_Text30"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_Four"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="4"
+                android:onClick="onClickFour"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text30" />
+            <Button
+                android:id="@+id/btn_Five"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="5"
+                android:onClick="onClickFive"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text30" />
+
+            <Button
+                android:id="@+id/btn_Six"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="6"
+                android:onClick="onClickSix"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text30" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_Seven"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="7"
+                android:onClick="onClickSeven"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text30" />
+
+            <Button
+                android:id="@+id/btn_Eight"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="8"
+                android:onClick="onClickEight"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text30" />
+
+            <Button
+                android:id="@+id/btn_Nine"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="9"
+                android:onClick="onClickNine"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text30" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_Decimal"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="."
+                android:onClick="onClickDecimal"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text40" />
+
+            <Button
+                android:id="@+id/btn_Zero"
+                style="@style/NumberButtonStyle"
+                android:gravity="center"
+                android:text="0"
+                android:onClick="onClickZero"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/dimen_Text30" />
+
+            <ImageButton
+                android:id="@+id/btn_del"
+                style="@style/NumberButtonStyle"
+                android:scaleType="center"
+                android:onClick="onClickDelete"
+                android:src="@drawable/backicon" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

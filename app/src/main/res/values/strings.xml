@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Exchange Rate</string>
+    <string name="mmk">MMK</string>
+    <string name="myanmar_kyat">Myanmar Kyat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="last_update">Last Update:</string>
+    <string name="network_error">Network Error</string>
+    <string name="network_error_long">Please check your network settings or swipe down to refresh</string>
+</resources>

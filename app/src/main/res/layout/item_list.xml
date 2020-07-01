@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/central_CardView"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardBackgroundColor="@color/white_color"
+    android:layout_marginLeft="@dimen/dimen_10"
+    android:layout_marginRight="@dimen/dimen_10"
+    android:layout_marginTop="@dimen/dimen_9"
+    app:cardCornerRadius="@dimen/dimen_10"
+    >
+
+    <RelativeLayout
+        android:id="@+id/central_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/central_Flag"
+            android:layout_width="@dimen/flag_dimen"
+            android:layout_height="@dimen/flag_dimen"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/flag_start_dimen"
+            android:gravity="start"
+            android:src="@drawable/ic_usd" />
+
+        <RelativeLayout
+            android:id="@+id/Name_Rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_toEndOf="@id/central_Flag"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/central_Currency_Short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:paddingStart="@dimen/padding_4"
+                android:textColor="@color/central_text_color"
+                android:textSize="@dimen/dimen_Text17"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mmk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/regular"
+                android:paddingEnd="@dimen/padding_12"
+                android:text="@string/mmk"
+                android:textColor="@color/central_text_color"
+                android:textStyle="italic"
+                tools:ignore="RtlSymmetry" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/central_ExchangeRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_3"
+                android:layout_toStartOf="@+id/mmk"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/central_text_color"
+                android:textSize="@dimen/dimen_Text17"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name_Rate"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/central_Flag">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/central_Currency_Long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:paddingStart="@dimen/padding_2"
+                android:textSize="@dimen/dimen_Text11"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins"
+                android:gravity="end"
+                android:paddingEnd="@dimen/padding_12"
+                android:text="@string/myanmar_kyat"
+                android:textSize="@dimen/dimen_Text11"
+                tools:ignore="RelativeOverlap,RtlSymmetry" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
